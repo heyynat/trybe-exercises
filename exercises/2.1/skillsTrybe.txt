@@ -1,3 +1,7 @@
+O que eu vou aprender na Trybe:
+
 . Unix
 . Git
 . JS
+. HTML
+. CSS
