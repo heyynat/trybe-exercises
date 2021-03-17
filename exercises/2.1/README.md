@@ -1,1 +1,1 @@
-Este é um exemplo teste de um exercicio, demonstrando coGit e Github. 
+Este é um exemplo de exercicio, demonstrando Git e Github. 
