@@ -1,18 +1,6 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let menor = 0;
-let maior = 0;
+let numbers = [];
 
-for (let i = 0; i<numbers.length; i++){
-    if (numbers[i]>maior){
-        maior = numbers[i];
-        menor = maior;
-    }
-    if (numbers[i]<menor){
-        menor = numbers[i];
-    }
+for(let i = 0; i<25; i+=1){
+   numbers[i]=i+1;
 }
-
-console.log(menor);
-
-
-
+console.log(numbers);
