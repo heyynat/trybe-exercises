@@ -8,4 +8,9 @@ for (let i = 0; i<numbers.length; i++){
 
 media = resultado/numbers.length; 
 
-console.log(media);
+if (media>20) {
+    console.log("Maior que 20");
+}
+else{
+    console.log("Menor que 20");
+}
