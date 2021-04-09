@@ -54,12 +54,45 @@ Crie uma função que corrija o texto da tag <h1>.
 Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
-   function alterParagraph(){
-     let paragraph = document.querySelector('#first-paragraph');
-     paragraph.innerText = 'Trabalhando como dev e morando em outro Estado.';
-   }
-   alterParagraph();
+    function alterParagraph() {
+      document.getElementById('first-paragraph').innerText = 'Trabalhando como dev e morando em outro Estado.';
+    }
+    alterParagraph();
 
+    function alterColor() {
+      let divMain = document.getElementsByClassName('main-content');
+      for (let i = 0; i < divMain.length; i += 1) {
+        divMain[i].style.backgroundColor = 'rgb(76,164,109)';
+      }
+    }
+    alterColor();
+
+    function alterColor2() {
+      let divMain = document.querySelector('.center-content');
+      divMain.style.backgroundColor = 'white';
+    }
+    alterColor2();
+
+    function corrijaH1() {
+      let titleH1 = document.getElementsByTagName('h1')[0].innerText = 'Exercício 5.1 - JavaScript';
+    }
+    corrijaH1();
+
+    function upperCase() {
+      let allParagraph = document.getElementsByTagName('p');
+      for (let i = 0; i < allParagraph.length; i += 1) {
+        allParagraph[i].style.textTransform = "uppercase";
+      }
+    }
+    upperCase();
+
+    function showParagraph() {
+      let paragraphShow = document.getElementsByTagName('p');
+      for (let i = 0; i < paragraphShow.length; i += 1) {
+        console.log(paragraphShow[i].innerText);
+      }
+    }
+    showParagraph();
   </script>
 </body>
 
