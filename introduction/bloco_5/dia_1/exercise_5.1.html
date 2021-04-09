@@ -54,8 +54,12 @@ Crie uma função que corrija o texto da tag <h1>.
 Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
 Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     */
-    var textP = document.getElementById('first-paragraph');
-    textP.innerText = 'Trabalhando como dev e morando em outro Estado.';
+   function alterParagraph(){
+     let paragraph = document.querySelector('#first-paragraph');
+     paragraph.innerText = 'Trabalhando como dev e morando em outro Estado.';
+   }
+   alterParagraph();
+
   </script>
 </body>
 
