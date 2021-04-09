@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5.4</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+    }
+
+    main {
+        margin: 50px;
+    }
+
+    btn {
+        margin-top: 0;
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mattis molestie velit, imperdiet rutrum
+            nisl pharetra ut. Proin euismod ex interdum molestie dignissim. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Sed non bibendum lacus. In hac habitasse platea
+            dictumst. Donec sagittis est libero, ut finibus diam rhoncus id. Praesent nec urna vitae purus tempor
+            accumsan sed vel sapien. Proin dolor dui, volutpat vitae felis non, semper hendrerit erat.
+
+            Etiam tempor auctor nibh, a aliquam orci interdum et. Ut lobortis scelerisque auctor. Phasellus vulputate
+            luctus fermentum. Integer feugiat laoreet nibh nec aliquam. Donec nisi eros, bibendum at rutrum sed, mollis
+            a justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer
+            molestie scelerisque turpis at pulvinar. In eu nunc tempus, accumsan lorem ac, aliquam nunc. Integer ac
+            velit et ligula pulvinar posuere. In et lacus dui. Integer iaculis tempor nisl a cursus. Integer massa
+            velit, mattis facilisis vestibulum ac, tempus vel ante. Pellentesque pellentesque vitae leo sit amet luctus.
+
+            Sed quis lacus laoreet massa interdum hendrerit ut sed neque. Donec dignissim dui est, nec mollis orci
+            pharetra in. Cras in lacus in leo malesuada vulputate eu eu mauris. Duis tristique ipsum quis sapien posuere
+            auctor. Mauris at purus consectetur enim mollis commodo ac at elit. Duis lacus orci, consequat ultricies
+            hendrerit vitae, auctor id risus. Mauris sed volutpat sapien, eget rutrum metus. Cras iaculis non sem ut
+            blandit. Integer faucibus augue sed dignissim commodo. Vestibulum placerat eros est, in bibendum neque
+            congue a. Nulla eget tortor tempus, consequat lacus a, congue erat. Fusce tristique urna nec sodales
+            sollicitudin. Sed semper aliquet arcu, non pharetra erat bibendum non. Suspendisse potenti.
+
+            Curabitur tincidunt lacinia ex. Fusce lacus ipsum, rutrum non tincidunt non, varius sed nunc. Suspendisse
+            potenti. Nam luctus diam id diam porttitor pretium. Phasellus dolor felis, mattis nec congue non, aliquam
+            vitae dui. Maecenas posuere suscipit magna. In molestie vel dui vitae interdum. Donec sodales velit risus,
+            sit amet posuere nisl dignissim sit amet. Sed consectetur felis vulputate ullamcorper fringilla. Duis congue
+            quam ut justo fringilla, id tincidunt sem sagittis. Sed eu enim turpis. Donec quis turpis quis eros semper
+            iaculis quis at orci.
+
+            Proin vulputate nisi non sem imperdiet, placerat fermentum libero malesuada. Nullam a aliquam magna, quis
+            consequat nibh. Praesent tempor sagittis ligula, vitae gravida sem rhoncus ac. Nullam hendrerit magna
+            vestibulum nisi ullamcorper, vel suscipit ex efficitur. Ut at mi eros. Vivamus blandit eleifend leo, id
+            luctus quam vestibulum eu. Morbi est eros, gravida vitae aliquam ut, commodo nec dui. Nulla facilisi.
+            Quisque justo leo, porttitor sit amet tempus non, malesuada at felis. Maecenas id nulla eget velit egestas
+            laoreet non sed odio. Aliquam fringilla, nulla eget vestibulum sagittis, sem lectus pulvinar sapien,
+            sagittis tempus lorem dui eget ante. Cras eget lacus ultrices, ullamcorper lacus ac, faucibus tortor.</p>
+    </main>
+</body>
+<script>
+    //Criando elementos Base
+    let divHeader = document.createElement('div');
+    let btnThemme = document.createElement('button');
+    let title = document.createElement('h1');
+
+    document.body.appendChild(divHeader);
+    divHeader.appendChild(title);
+    divHeader.appendChild(btnThemme);
+
+    btnThemme.classList.add('bgcolor');
+
+    //Inserçao de Valores
+    title.innerText = 'Personalize sua pagina';
+    btnThemme.innerText = 'DarkMode';
+
+</script>
+
+</html>
