@@ -39,3 +39,13 @@ function createDaysOfMonth() {
     }
 }
 createDaysOfMonth();
+
+function createBtnHoliday(string) {
+    string = 'Feriados';
+    let buttonsContainer = document.querySelector('.buttons-container');
+    let btnHoliday = document.createElement('button');
+    btnHoliday.innerText = string;
+
+    buttonsContainer.appendChild(btnHoliday);
+}
+createBtnHoliday();
