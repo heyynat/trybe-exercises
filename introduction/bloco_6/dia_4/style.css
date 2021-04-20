@@ -115,6 +115,7 @@ header {
   flex-basis: 700px;
   flex-direction: column;
   display: flex;
+  flex-grow: 10;
 }
 
 .card-container div {
