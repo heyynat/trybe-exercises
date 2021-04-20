@@ -39,6 +39,7 @@ body {
 
 .logo-container {
   width: 268px;
+  
 }
 
 .menu-container {
@@ -47,4 +48,5 @@ body {
 
 header {
   flex-direction: row-reverse;
+  justify-content: flex-end;
 }
