@@ -65,35 +65,35 @@
         document.body.appendChild(titleH1);
 
         //Adicione a tag div com a classe main-content como filho da tag body ;
-        let divClass = document.createElement('div');
-        divClass.className = 'main-content';
-        document.body.appendChild(divClass);
+        let divMainContent = document.createElement('div');
+        divMainContent.className = 'main-content';
+        document.body.appendChild(divMainContent);
 
         //Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
-        let divClass2 = document.createElement('div');
-        divClass2.classList.add('center-content');
-        divClass.appendChild(divClass2);
+        let divCenterContent = document.createElement('div');
+        divCenterContent.classList.add('center-content');
+        divMainContent.appendChild(divCenterContent);
 
         //Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
         let paragraph = document.createElement('p');
         paragraph.innerText = 'Heyy, eu sou um paragrafo!!';
-        divClass2.appendChild(paragraph);
+        divCenterContent.appendChild(paragraph);
 
         //Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
-        let divLeft = document.createElement('div');
-        divLeft.classList.add('left-content');
-        divClass2.appendChild(divLeft);
+        let divLeftContent = document.createElement('div');
+        divLeftContent.classList.add('left-content');
+        divMainContent.appendChild(divLeftContent);
 
         //Adicione a tag div com a classe right-content como filho da tag div criada no passo 2;
-        let divRight = document.createElement('div');
-        divRight.classList.add('right-content');
-        divClass2.appendChild(divRight);
+        let divRightContent = document.createElement('div');
+        divRightContent.classList.add('right-content');
+        divMainContent.appendChild(divRightContent);
 
         //Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do div criado no passo 5;
         let image = document.createElement('img');
         image.src = 'https://picsum.photos/200';
         image.classList.add('small-image');
-        divLeft.appendChild(image);
+        divLeftContent.appendChild(image);
 
         //Adicione uma lista não ordenada com os valores de 1 a 10 por extenso como valores da lista. Essa lista deve ser filha do div criado no passo 6;
         let arrayItems = [
@@ -108,9 +108,8 @@
             'Nove',
             'Dez'];
         let arrayListItems = document.createElement('ul');
-        divRight.appendChild(arrayListItems);
+        divRightContent.appendChild(arrayListItems);
         for (let index in arrayItems) {
-
             const elementLi = document.createElement('li');
             elementLi.innerHTML = arrayItems[index];
             arrayListItems.appendChild(elementLi);
@@ -121,6 +120,9 @@
             const subTitleH3 = document.createElement('h3');
             subTitleH3.innerHTML = 'SubTitulo ' + index;
             divClass2.appendChild(subTitleH3);
+        for (let index = 0; index < 2; index += 1) {
+            let subTitle = document.createElement('h3');
+            divMainContent.appendChild(subTitle);
         }
 
         //Part - II
@@ -146,6 +148,21 @@
         const divCenterContent = document.getElementsByClassName('center-content')[0];
         divCenterContent.parentNode.style.backgroundColor = 'green';
         
+        let subTitles = document.querySelectorAll('h3');
+        for (let index = 0; index < 2; index += 1) {
+            subTitles[index].classList.add('description');
+        }
+
+        //Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+        divMainContent.removeChild(divLeftContent);
+
+        //Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+        divRightContent.style.marginRight = 'auto'
+
+        //Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+        let nodeDadDivCenterContent = document.querySelector('.center-content').parentNode;
+        nodeDadDivCenterContent.style.backgroundColor = 'green';
+
         //Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
         arrayListItems.lastChild.remove();
         arrayListItems.lastChild.remove();
