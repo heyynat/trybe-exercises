@@ -116,6 +116,10 @@
         }
 
         //Adicione 3 tags h3 , todas sendo filhas do div criado no passo 2.
+        for (let index = 1; index <= 3; index += 1) {
+            const subTitleH3 = document.createElement('h3');
+            subTitleH3.innerHTML = 'SubTitulo ' + index;
+            divClass2.appendChild(subTitleH3);
         for (let index = 0; index < 2; index += 1) {
             let subTitle = document.createElement('h3');
             divMainContent.appendChild(subTitle);
@@ -127,6 +131,23 @@
         titleH1.classList.add('title');
 
         //Adicione a classe description nas 3 tags h3 criadas;
+        const subTitleH3 = document.getElementsByTagName('h3');
+        for (let index = 0; index < 3; index += 1) {
+            subTitleH3[index].className = 'description';
+        }
+
+        //Remova o div criado no passo 5 (aquele que possui a classe left-content ). Utilize a função .removeChild() ;
+        const divLeftContent = document.getElementsByClassName('left-content')[0];
+        divClass2.removeChild(divLeftContent);
+
+        //Centralize o div criado no passo 6 (aquele que possui a classe right-content ). Dica: para centralizar, basta configurar o margin-right: auto do div ;
+        const divRightContent = document.getElementsByClassName('right-content')[0];
+        divRightContent.style.marginRight = 'auto'
+
+        //Troque a cor de fundo do elemento pai da div criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+        const divCenterContent = document.getElementsByClassName('center-content')[0];
+        divCenterContent.parentNode.style.backgroundColor = 'green';
+        
         let subTitles = document.querySelectorAll('h3');
         for (let index = 0; index < 2; index += 1) {
             subTitles[index].classList.add('description');

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 1</title>
+</head>
+
+<body>
+  <header class="form-header">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha os campos abaixo.</p>
+  </header>
+  <form action="" method="GET">
+    <fieldset>
+      <div>
+        <label for="name">Nome:
+          <input type="text" name='name-people' id="name" maxlength="40" required placeholder="Digite seu nome">
+        </label>
+      </div>
+
+      <div>
+        <label for="email">E-mail:
+          <input type="email" name='address-email' id="email" maxlength="50" class="email-input" required placeholder="Digite seu e-mail">
+        </label>
+      </div>
+
+      <div>
+        <label for="cpf-people">CPF:</label>
+        <input type="text" name='cpf' id="cpf-people" maxlength="11" required placeholder="Insira seu CPF">
+      </div>
+
+      <div>
+        <label for="address">Endereço:
+          <input type="text" name='address-people' id="address" maxlength="20" required
+            placeholder="Digite seu endereço">
+        </label>
+      </div>
+
+      <div>
+        <label for="city-people">Cidade: </label>
+        <input type="text" name='city' id="city-people" maxlength="28" required placeholder="Digite sua cidade">
+      </div>
+      <div>
+
+        <label for="state-people">Estado:
+          <select name="state" id="state-people" required>Selecione seu Estado:
+          </select>
+        </label>
+      </div>
+
+      <div>
+        <label for="type">Residência:
+          <input type="radio" id="type-home" name="type" required>Casa
+          <input type="radio" id="type-home" name="type" required>Apartamento
+        </label>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <div>
+        <label for="resumo-curriculo">Resumo do currículo: </label>
+        <textarea name="resumo" id="resumo-curriculo" cols="30" rows="10" required maxlength="1000"></textarea>
+      </div>
+      <div>
+        <label for="job">Cargo: </label>
+        <input type="text" id="job" required maxlength="500">
+      </div>
+      <div>
+        <label for="job-description">Descrição do cargo: </label>
+        <input type="text" id="job-description" required maxlength="500">
+      </div>
+      <div class="input-data">
+        <label for="date">Data: </label>
+        <input type="date" name="DD/MM/YYYY" id="date">
+      </div>
+    </fieldset>
+      <div>
+        <button class="submit-button" type="button">Enviar</button>
+        <button class="clear-button" type="button">Limpar</button>
+      </div>
+  </form>
+</body>
+
+<script>
+
+  let select = document.querySelector('select');
+  let states = ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Distrito Federal', 'Espirito Santo', 'Goiás', 'Maranhão', 'Mato Grosso do Sul', 'Mato Grosso', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins'];
+
+  function estadosBr() {
+    for (let index of states) {
+      const option = document.createElement('option');
+      select.appendChild(option);
+      option.innerText = index;
+    }
+  }
+
+  function validateData(data) {
+    if (data.indexOf('/') === 2 || data.indexOf('/') === 5) {
+      const day = data.substr(0, 2);
+      const month = data.substr(3, 2);
+      const year = data.substr(6, 4);
+      if ((day > 0 && day <= 31) && (month > 0 && month <= 12) && (year >= 0 && year.length === 4)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function checkData() {
+    const inputData = document.querySelector('.input-data');
+    let data = inputData.value;
+    const userData = validateData(data);
+    if (!userData && data.length) {
+      inputData.value = '';
+      alert('data invalida');
+      return false;
+    }
+    return userData;
+  }
+
+  function checkEmail() {
+    const email = document.querySelector('.email-input');
+    let insertedEmail = email.value;
+    const emailFormat = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+$/.test(insertedEmail);
+    if (!emailFormat && insertedEmail.length) {
+      email.value = '';
+      alert('email inválido');
+      return false;
+    }
+    return emailFormat
+  }
+
+  function renderCurriculum(event) {
+    event.preventDefault();
+    const formElements = document.querySelectorAll('input');
+    for (let index = 0; index < formElements.length; index += 1) {
+      if (formElements[index].type === 'radio' && !formElements[index].checked) {
+        continue;
+      }
+      const userInput = formElements[index].value;
+      const dataUser = document.querySelector('.form-data');
+      if (checkEmail() && checkData()) {
+        const div = document.createElement('div');
+        div.className = 'div-curriculum';
+        div.innerHTML = userInput;
+        dataUser.appendChild(div);
+      }
+    }
+  }
+
+  const clearButton = document.querySelector('.clear-button');
+  function clearFields() {
+    const formElements = document.querySelectorAll('input');
+    const textArea = document.querySelector('textarea')
+    const div = document.querySelectorAll('.div-curriculum');
+    for (let index = 0; index < formElements.length && index < div.length; index += 1) {
+      const userInput = formElements[index];
+      userInput.value = '';
+      textArea.value = '';
+      div[index].innerText = '';
+    }
+  }
+
+  const submitButton = document.querySelector('.submit-button');
+  submitButton.addEventListener('click', renderCurriculum);
+  clearButton.addEventListener('click', clearFields);
+
+  window.onload = function () {
+    estadosBr();
+  }
+</script>
+
+</html>
