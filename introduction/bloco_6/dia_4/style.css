@@ -110,3 +110,13 @@ header {
   margin: 10px 0;
   text-align: justify;
 }
+
+.movie-container {
+  flex-basis: 700px;
+  flex-direction: column;
+  display: flex;
+}
+
+.card-container div {
+  flex-basis: 16%;
+}
