@@ -44,3 +44,7 @@ body {
 .menu-container {
   width: 500px;
 }
+
+header {
+  flex-direction: row-reverse;
+}
