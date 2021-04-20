@@ -120,4 +120,5 @@ header {
 
 .card-container div {
   flex-basis: 16%;
+  flex-grow: 1;
 }
