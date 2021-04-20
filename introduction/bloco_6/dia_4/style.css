@@ -50,3 +50,9 @@ header {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
+
+.menu-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
