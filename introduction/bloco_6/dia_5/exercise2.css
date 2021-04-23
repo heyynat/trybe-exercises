@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+}
+
+p {
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: brown;
+  }
+  
+  header p {
+    text-align: center;
+    font-weight: 900;
+  }
+  
+  h1, h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-content {
+    margin: 0 50px;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    background-color: lightblue;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-color: lightgreen;
+  }
+  
+  .container {
+    flex-wrap: nowrap;
+  }  
+  footer {
+    text-align: center;
+  }
+}
