@@ -52,7 +52,7 @@ const longestWord = text => {
   let wordArray = text.split(' ')
   let maxLength = 0
   let result = ''
-
+  
   for (const word of wordArray) {
     if (word.length > maxLength) {
       maxLength = word.length;
@@ -64,3 +64,30 @@ const longestWord = text => {
 }
 
 console.log(longestWord("Antonio foi no banheiro e não sabemos o que aconteceu"));
+
+// Parte - 4/4
+const arraySkills = ["Android", "iOS", "Architecture", "Teach", "Run"];
+
+function buildSkillsPhrase (paramOne) {
+  const fun1 = paramInner => (
+    `Tryber ${paramInner} aqui!
+    
+    Tudo bem?`)
+    
+    let result = `${fun1(paramOne)}
+    
+    Minhas cinco principais habilidades são:`
+    
+    arraySkills.forEach((skill, index) =>
+    result = `${result}
+    
+    - ${skill}`)
+    
+    result = `
+    ${result}
+    
+    #goTrybe
+    `    
+    return result
+  }
+  console.log(buildSkillsPhrase("Lucas"));
