@@ -60,7 +60,73 @@ const orderModifier = (order) => {
   const drinks = order.order.drinks.coke.type;
   const newTotal = order.payment.total = '50';
   
-  console.log(`Olá ${customerName}, o total do seu pedido de ${orderPizza} e ${drinks} é R$ ${newTotal}.`)
+  console.log(`Olá ${customerName}, o total do seu pedido de ${orderPizza[0]}, ${orderPizza[1]} e ${drinks} é R$ ${newTotal}.`)
 }
 
 orderModifier(order);
+
+// Part II
+const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+const Addlesson2 = (obj, turno, manha) => {
+  obj[turno] = manha;
+};
+
+Addlesson2(lesson2, 'turno', 'manhã');
+console.log(lesson2);
+
+const listKeys = (obj3) => {
+  const list = Object.keys(obj3);
+  return list;
+}
+console.log(listKeys(lesson3));
+
+const sizeObj = (obj) =>  Object.keys(obj).length;
+console.log(sizeObj(lesson1));
+
+const listValues = (obj) =>  Object.values(obj);
+console.log(listValues(lesson1));
+
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+console.log(allLessons);
+
+const getNumberOfStudents = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (index in array) {
+    total += obj[array[index]].numeroEstudantes;
+  }
+  return total;
+};
+console.log(getNumberOfStudents(allLessons));
+
+const getValueByNumber = (obj,number) => Object.values(obj)[number];
+console.log(getValueByNumber);
+
+const verifyPair = (obj, key, value) => {
+  const arr = Object.entries(obj);
+  let isEqual = false;
+  for (let index in arr) {
+    if (arr[index][0] === key && arr[index][1] === value) isEqual = true;
+  }
+  return isEqual;
+};
+console.log(verifyPair(lesson2,'professor','Carlos'));
