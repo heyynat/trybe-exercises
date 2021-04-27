@@ -1,0 +1,42 @@
+body {
+  font-size: 20px;
+  margin: 0 50px;
+}
+
+h1 {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 850px) {
+  body {
+    background-color: blueviolet;
+    font-size: xx-large;
+    margin: 0 50px;
+  }
+  
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: brown;
+    margin: 0 50px;
+    max-width: 1600px;
+  }
+  
+  figure {
+    width: 30%;
+    justify-content: space-around;
+    margin-right: 15px;
+  }
+}
