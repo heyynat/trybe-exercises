@@ -1,3 +1,4 @@
+// Exercise 1
 const assert = require('assert');
 
 function sum(a, b) {
@@ -20,3 +21,23 @@ assert.throws(() => {
 assert.throws(() => {
   sum(4, '5');
 }, /^Error: parameters must be numbers$/);
+
+// Exercise 2
+function myRemove(arr, item) {
+  let newArr = [];
+  for (let index = 0; index < arr.length; index += 1) {
+    if (item !== arr[index]) {
+      newArr.push(arr[index]);
+    }
+  }
+  return newArr;
+}
+
+// implemente seus testes aqui
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 4], 'Esperava-se um array diferente');
+assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [1, 2, 3, 4]);
+
+const myArray = [5, 6, 7, 8];
+myRemove(myArray, 5);
+assert.deepStrictEqual(myArray, [5, 6, 7, 8]);
+assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
