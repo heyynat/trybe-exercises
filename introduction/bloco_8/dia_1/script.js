@@ -18,3 +18,18 @@ const newEmployees = (superFunction) => {
 };
 
 console.log(newEmployees(functionFirstOrder));
+
+// Exercise 2
+const sorteio = () => {
+  const numberRandom = Math.floor((Math.random() * 5) + 1);
+  return numberRandom;
+}
+
+const ganheiPerdi = (num, numApost) => {
+  if (num() === numApost) {
+    return 'Parabéns você ganhou';
+  }
+  return 'Tente novamente';
+}
+
+console.log(ganheiPerdi(sorteio, 5));
