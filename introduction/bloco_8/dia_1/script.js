@@ -25,11 +25,6 @@ const sorteio = () => {
   return numberRandom;
 }
 
-const ganheiPerdi = (num, numApost) => {
-  if (num() === numApost) {
-    return 'Parabéns você ganhou';
-  }
-  return 'Tente novamente';
-}
+const ganheiPerdi = (num, numApost) => num() === numApost ? 'Parabéns você ganhou' : 'Tente novamente';
 
 console.log(ganheiPerdi(sorteio, 5));
