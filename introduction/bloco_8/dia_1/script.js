@@ -21,7 +21,7 @@ console.log(newEmployees(functionFirstOrder));
 
 // Exercise 2
 const sorteio = () => {
-  const numberRandom = Math.floor((Math.random() * 5) + 1);
+  const numberRandom = Math.ceil(Math.random() * 5);
   return numberRandom;
 }
 
