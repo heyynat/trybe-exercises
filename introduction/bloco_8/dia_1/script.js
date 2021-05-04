@@ -21,15 +21,10 @@ console.log(newEmployees(functionFirstOrder));
 
 // Exercise 2
 const sorteio = () => {
-  const numberRandom = Math.floor((Math.random() * 5) + 1);
+  const numberRandom = Math.ceil(Math.random() * 5);
   return numberRandom;
 }
 
-const ganheiPerdi = (num, numApost) => {
-  if (num() === numApost) {
-    return 'Parabéns você ganhou';
-  }
-  return 'Tente novamente';
-}
+const ganheiPerdi = (num, numApost) => num() === numApost ? 'Parabéns você ganhou' : 'Tente novamente';
 
 console.log(ganheiPerdi(sorteio, 5));
