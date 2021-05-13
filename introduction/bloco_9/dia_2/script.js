@@ -29,7 +29,7 @@ const myPromise = new Promise ((resolve, reject) => {
  });
  
  myPromise
- .then(() => console.log('Promise resolvida'))
+ .then(sum => [2, 3, 5, 10].map(number => sum / number))
  .catch(() => console.log('Promise rejeitada'));
 };
 
