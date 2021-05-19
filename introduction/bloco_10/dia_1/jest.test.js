@@ -1,5 +1,6 @@
 const { decode, encode } = require("./exercise1_Parte2");
 const sum = require("./exercise1_Parte1");
+const techList = require("./exercise.2_Parte2");
 
 describe('Parte I', () => {
   test('Teste se o retorno de sum(4, 5) é 9', () => {
@@ -32,4 +33,38 @@ describe('Parte II', () => {
   test('Teste se a string que é retornada pelas funções têm o mesmo número de caracteres que a string passada como parâmetro.', () => {
     expect(encode('nat').length).toEqual(3);
   });
-})
+  
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
+});
