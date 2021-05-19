@@ -1,12 +1,6 @@
-const { decode, encode } = require("./exercise1");
+const { decode, encode } = require("./exercise1_Parte2");
+const sum = require("./exercise1_Parte1");
 
-function sum(a, b) {
-  if (typeof a !== 'number' || typeof b !== 'number') {
-    throw new Error('parameters must be numbers');
-  }
-  
-  return a + b;
-}
 describe('Parte I', () => {
   test('Teste se o retorno de sum(4, 5) é 9', () => {
     expect(sum(4, 5)).toEqual(9);
