@@ -76,7 +76,7 @@ Bloco 09: JavaScript Assíncrono e Promises
 
 - [x] 9-1: JavaScript Assíncrono e Callbacks
 - [x] 9-2: JavaScript Promises
-- [x] 9-3: [Projeto - Carrinho de Compras](https://github.com/tryber/sd-011-project-shopping-cart/tree/heyynat-project-shopping-cart)
+- [x] 9-3: [Projeto - Carrinho de Compras](https://github.com/tryber/sd-011-project-shopping-cart/pull/105)
 
 Bloco 10: Testes automatizados com Jest
 
