@@ -23,3 +23,20 @@ describe('Exercício 2', () => {
       );
     });
   });
+  
+  describe('Exercício 3', () => {
+    it('Verifique o resultado da função getUserName para o caso em que o usuário é encontrado.', async () => {
+      expect.assertions(1);
+      const data = await getUserName(4);
+      expect(data).toEqual('Mark');
+    });
+    
+    it('Verifique o resultado da função getUserName para o caso em que o usuário não é encontrado.', async () => {
+      expect.assertions(1);
+      try {
+        await getUserName(1);
+      } catch (error) {
+        expect(error).toEqual({ error: 'User with 1 not found.' });   
+      }    
+    });
+  });
