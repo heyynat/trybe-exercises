@@ -83,4 +83,61 @@ Bloco 10: Testes automatizados com Jest
 - [x] 10-1: Primeiros passos no Jest
 - [x] 10-2: Jest - Testes Assíncronos
 - [x] 10-3: Jest - Simulando comportamentos
- - [ ] 10-4: Projeto - Jest Assíncrono e Mocking
+- [x] 10-4: [Projeto - Jest Assíncrono e Mocking](https://github.com/tryber/sd-011-project-jest/pull/26)
+
+
+<h1>Desenvolvimento Front-end</h1>
+
+Bloco 11: Introdução à React
+
+ - [ ] 01: Introdução - Front-end
+ - [ ] 01: Introdução - React
+ - [ ] 01: 'Hello, world!' no React!
+ - [ ] 02: Componentes React
+ - [ ] 03: Projeto - Movie Cards Library
+
+Bloco 12: Componentes com Estado, Eventos e Formulários com React
+
+ - [ ] 01: Componentes com estado e eventos
+ - [ ] 02: Formulários no React
+ - [ ] 03: Projeto - Movie Cards Library Stateful
+
+Bloco 13: Ciclo de Vida de Componentes e React Router
+
+ - [ ] 01: Ciclo de vida de componentes
+ - [ ] 02: React Router
+ - [ ] 03: Projeto - Movie Cards Library CRUD
+
+Bloco 14: Metodologias Ágeis
+01: Metodologias Ágeis
+02: Projeto - Frontend Online Store
+
+Bloco 15: Testes automatizados com React Testing Library
+
+ - [ ] 01: RTL - Primeiros passos
+ - [ ] 02: RTL - Mocks e Inputs
+ - [ ] 03: RTL - Testando React Router
+ - [ ] 04: Projeto - Testes em React
+
+Bloco 16: Gerenciamento de estado com Redux
+
+ - [ ] 01: Introdução ao Redux - O estado global da aplicação
+ - [ ] 02: Usando o Redux no React
+ - [ ] 03: Usando o Redux no React - Prática
+ - [ ] 04: Usando o Redux no React - Actions Assíncronas
+ - [ ] 05: Testes em React-Redux
+ - [ ] 06: Projeto - Trybe Wallet
+
+Bloco 17: Projeto Jogo de Trivia
+ - [ ] 01: Projeto - Jogo de Trivia
+
+Bloco 18: Context API e React Hooks
+
+ - [ ] 01: Context API do React
+ - [ ] 02: React Hooks - useState e useContext
+ - [ ] 03: React Hooks - useEffect e Hooks customizados
+ - [ ] 04: Projeto - StarWars Datatable com Context API e Hooks
+
+Bloco 19: Projeto App de Receitas
+
+ - [ ] 01: Projeto - App de Receitas
