@@ -1,25 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+class App extends Component {
+  constructor() {
+    super();
+    
+    this.handleChange = this.handleChange.bind(this);
+    
+    this.state = {
+      estadoFavorito: '',
+    };
+  }
+  
+  handleChange(event) {
+    this.setState({
+      estadoFavorito: event.target.value,
+    });
+  }
+  
+  render() {
+    return (
+      <div>
+      <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
+      <form className="form">
+      <label>
+      Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
+      <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+      </label>
+      <label>
+      Idade: 
+      <input
+      type="number"
+      name="idade"
+      />
+      </label>
+      
+      <label>
+      Vou Comparecer: 
+      <input
+      type="checkbox"
+      name="vaiComparecer"
+      />
+      </label>
+      </form>
+      </div>
+      );
+    }
+  }
+  
+  export default App;
