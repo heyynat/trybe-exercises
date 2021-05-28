@@ -8,6 +8,8 @@ class App extends Component {
     
     this.handleChange = this.handleChange.bind(this);
     
+    this.fileInput = React.createRef();
+    
     this.state = {
       estadoFavorito: '',
       idade: '',
@@ -24,38 +26,49 @@ class App extends Component {
     });
   }
   
-  render() {
-    return (
-      <div>
-      <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
-      <form className="form">
-      <label>
-      Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-      <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-      </label>
-      <label>
-      Idade: 
-      <input
-      type="number"
-      name="idade"
-      value={this.state.idade} 
-      onChange={this.handleChange} 
-      />
-      </label>
-      
-      <label>
-      Vou Comparecer: 
-      <input
-      type="checkbox"
-      name="vaiComparecer"
-      value={this.state.vaiComparecer} 
-      onChange={this.handleChange} 
-      />
-      </label>
-      </form>
-      </div>
+  handleSubmit(event) {
+    event.preventDefault();
+    alert(
+      `Selected file - ${this.fileInput.current.files[0].name}`
       );
     }
-  }
-  
-  export default App;
+    
+    render() {
+      return (
+        <div>
+        <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
+        <form className="form">
+        <label>
+        Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
+        <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
+        </label>
+        <label>
+        Idade: 
+        <input
+        type="number"
+        name="idade"
+        value={this.state.idade} 
+        onChange={this.handleChange} 
+        />
+        </label>
+        
+        <label>
+        Vou Comparecer: 
+        <input
+        type="checkbox"
+        name="vaiComparecer"
+        value={this.state.vaiComparecer} 
+        onChange={this.handleChange} 
+        />
+        </label>
+        <label>
+        Enviar Arquivo: 
+        <input type="file" ref={this.fileInput} />
+        </label>
+        </form>
+        </div>
+        );
+      }
+    }
+    
+    export default App;
