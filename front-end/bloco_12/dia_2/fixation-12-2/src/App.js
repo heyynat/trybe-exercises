@@ -1,5 +1,7 @@
 import './App.css';
 import React, { Component } from 'react'
+import EstadoFavorito from './EstatoFavorito';
+import Idade from './Idade';
 
 
 class App extends Component {
@@ -13,7 +15,7 @@ class App extends Component {
     this.state = {
       estadoFavorito: '',
       idade: '',
-      vaiComparecer: false
+      vaiComparecer: false,
     };
   }
   
@@ -39,20 +41,8 @@ class App extends Component {
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
         <form className="form">
         <fieldset>
-        <label>
-        Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
-        <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
-        </label>
-        <label>
-        Idade: 
-        <input
-        type="number"
-        name="idade"
-        value={this.state.idade} 
-        onChange={this.handleChange} 
-        />
-        </label>
-        
+        <EstadoFavorito handleChange={this.handleChange} />
+        <Idade handleChange={this.handleChange}/>
         <label>
         Vou Comparecer: 
         <input
