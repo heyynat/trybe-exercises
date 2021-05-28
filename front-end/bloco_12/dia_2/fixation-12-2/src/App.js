@@ -38,6 +38,7 @@ class App extends Component {
         <div>
         <h1>Estados e React - Tecnologia fantástica ou reagindo a regionalismos?</h1>
         <form className="form">
+        <fieldset>
         <label>
         Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
         <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
@@ -65,6 +66,7 @@ class App extends Component {
         Enviar Arquivo: 
         <input type="file" ref={this.fileInput} />
         </label>
+        </fieldset>
         </form>
         </div>
         );
