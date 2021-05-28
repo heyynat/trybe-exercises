@@ -10,12 +10,17 @@ class App extends Component {
     
     this.state = {
       estadoFavorito: '',
+      idade: '',
+      vaiComparecer: false
     };
   }
   
-  handleChange(event) {
+  handleChange({ target }) {
+    const { name } = target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    
     this.setState({
-      estadoFavorito: event.target.value,
+      [name]: value,
     });
   }
   
@@ -33,6 +38,8 @@ class App extends Component {
       <input
       type="number"
       name="idade"
+      value={this.state.idade} 
+      onChange={this.handleChange} 
       />
       </label>
       
@@ -41,6 +48,8 @@ class App extends Component {
       <input
       type="checkbox"
       name="vaiComparecer"
+      value={this.state.vaiComparecer} 
+      onChange={this.handleChange} 
       />
       </label>
       </form>
