@@ -1,6 +1,6 @@
 import './App.css';
 import React, { Component } from 'react'
-import EstadoFavorito from './EstatoFavorito';
+import EstadoFavorito from './EstadoFavorito';
 import Idade from './Idade';
 
 
