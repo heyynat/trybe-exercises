@@ -20,6 +20,9 @@ class App extends React.Component {
             cidade: '',
             estado: '',
             tipo: '',
+            resume: '',
+            position: '',
+            description: '',
         };
     }
 
@@ -49,8 +52,7 @@ class App extends React.Component {
     }
 
     handleChange({ target }) {
-        const { name } = target;
-        const value = target.type === 'radio' ? target.value : '';
+        const { name, value } = target;
         
         this.setState({
             [name]: value,
@@ -67,7 +69,7 @@ class App extends React.Component {
             removeSpecialCaracteres={this.removeSpecialCaracteres}
             onBlurHandler={ this.onBlurHandler }
             />
-            <SecondFieldset />
+            <SecondFieldset handleChange={this.handleChange} />
             </main>
             );
         }
