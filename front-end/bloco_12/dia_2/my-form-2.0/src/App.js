@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import date from './components/date';
 import FirstFieldset from './components/FirstFieldset';
 import SecondFieldset from './components/SecondFieldset';
 
@@ -10,7 +11,9 @@ class App extends React.Component {
         
         this.handleChange = this.handleChange.bind(this);
         this.letterUppercase = this.letterUppercase.bind(this);
-        this.removeSpecialCaracteres = this.removeSpecialCaracteres.bind(this);        
+        this.removeSpecialCaracteres = this.removeSpecialCaracteres.bind(this);   
+        this.resetForm = this.resetForm.bind(this);
+        this.sendForm = this.sendForm.bind(this);
 
         this.state = {
             name: '',
@@ -23,6 +26,7 @@ class App extends React.Component {
             resume: '',
             position: '',
             description: '',
+            submitted: false,
         };
     }
 
@@ -59,20 +63,42 @@ class App extends React.Component {
         });
     }
 
+    resetForm({ target }) { 
+        const { name, value } = target;
+        this.setState({
+            [name]: value,
+        });
+    };
+
+    sendForm() { 
+        this.setState({ submitted: true }) 
+    };  
+
     render() {
-        
+        const { submitted } = this.state;
         return (
-            <main>
-            <FirstFieldset 
-            handleChange={this.handleChange} 
-            letterUppercase={this.letterUppercase}
-            removeSpecialCaracteres={this.removeSpecialCaracteres}
-            onBlurHandler={ this.onBlurHandler }
-            />
-            <SecondFieldset handleChange={this.handleChange} />
-            </main>
-            );
-        }
+            <form>
+                <FirstFieldset 
+                handleChange={this.handleChange} 
+                letterUppercase={this.letterUppercase}
+                removeSpecialCaracteres={this.removeSpecialCaracteres}
+                onBlurHandler={ this.onBlurHandler }
+                />
+                <SecondFieldset handleChange={this.handleChange} />
+                <input
+                type="button"
+                sendForm={ this.sendForm }
+                value="Enviar"
+                />
+                <input
+                type="reset"
+                resetForm={ this.resetForm }
+                value="Limpar"
+                />
+                { submitted && <date currentState={ this.state } /> }
+            </form>
+        );
     }
-    
+}
+
     export default App;
