@@ -4,10 +4,16 @@ import './App.css';
 class App extends React.Component {
   constructor() {
     super()
-    // A função abaixo vincula "manualmente" o `this` à nossa função
+
     this.handleClick = this.handleClick.bind(this)
     this.handleClick2 = this.handleClick2.bind(this)
     this.handleClick3 = this.handleClick3.bind(this)
+
+    this.state = {
+      numeroDeCliquesbtn1: 0,
+      numeroDeCliquesbtn2: 0,
+      numeroDeCliquesbtn3: 0
+    }
 
   }
 
