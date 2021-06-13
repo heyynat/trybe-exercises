@@ -10,11 +10,10 @@ const initState = {
 class Pokedex extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {clickNumber: 0};
-            // name: '',
-            // image: '',
-            // type: '',
-            // AverageWeight: '',
+        this.state = {
+            clickNumber: 0,
+            pokes,
+        }
         this.next = this.next.bind(this)
     }
 
@@ -28,6 +27,12 @@ class Pokedex extends React.Component {
     this.setState(initState)
     }
     
+    updateState() {
+        this.setState({
+            pokes: this.filterFire(),
+        });
+    }
+
     render () {
         
         return (

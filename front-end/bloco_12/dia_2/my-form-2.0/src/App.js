@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import date from './components/date';
+import Date from './components/Date';
 import FirstFieldset from './components/FirstFieldset';
 import SecondFieldset from './components/SecondFieldset';
 
@@ -95,7 +95,7 @@ class App extends React.Component {
                 resetForm={ this.resetForm }
                 value="Limpar"
                 />
-                { submitted && <date currentState={ this.state } /> }
+                { submitted && <Date currentState={ this.state } /> }
             </form>
         );
     }

@@ -1,7 +1,16 @@
 import React from 'react';
 
 class Pokemon extends React.Component {
-
+    constructor(props) {
+        super(props)
+        this.state = {
+            name: '',
+            image: '',
+            type: '',
+            AverageWeight: '',
+        }
+    }
+    
     render() {
         return (
             <div className={'box-pokemon'}>
