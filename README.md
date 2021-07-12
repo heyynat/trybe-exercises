@@ -90,43 +90,43 @@ Bloco 10: Testes automatizados com Jest
 
 Bloco 11: Introdução à React
 
- - [ ] 01: Introdução - Front-end
- - [ ] 01: Introdução - React
- - [ ] 01: 'Hello, world!' no React!
- - [ ] 02: Componentes React
- - [ ] 03: Projeto - Movie Cards Library
+ - [x] 01: Introdução - Front-end
+ - [x] 01: Introdução - React
+ - [x] 01: 'Hello, world!' no React!
+ - [x] 02: Componentes React
+ - [x] 03: [Projeto - Movie Cards Library](https://github.com/tryber/sd-011-project-movie-cards-library/pull/172)
 
 Bloco 12: Componentes com Estado, Eventos e Formulários com React
 
- - [ ] 01: Componentes com estado e eventos
- - [ ] 02: Formulários no React
- - [ ] 03: Projeto - Movie Cards Library Stateful
+ - [x] 01: Componentes com estado e eventos
+ - [x] 02: Formulários no React
+ - [x] 03: [Projeto - Movie Cards Library Stateful](https://github.com/tryber/sd-011-project-movie-cards-library-stateful/pull/12)
 
 Bloco 13: Ciclo de Vida de Componentes e React Router
 
- - [ ] 01: Ciclo de vida de componentes
- - [ ] 02: React Router
- - [ ] 03: Projeto - Movie Cards Library CRUD
+ - [x] 01: Ciclo de vida de componentes
+ - [x] 02: React Router
+ - [x] 03: [Projeto - Movie Cards Library CRUD](https://github.com/tryber/sd-011-project-movie-card-library-crud/pull/104)
 
 Bloco 14: Metodologias Ágeis
-01: Metodologias Ágeis
-02: Projeto - Frontend Online Store
+ - [x] 01: Metodologias Ágeis
+ - [x] 02: Projeto - Frontend Online Store
 
 Bloco 15: Testes automatizados com React Testing Library
 
- - [ ] 01: RTL - Primeiros passos
- - [ ] 02: RTL - Mocks e Inputs
- - [ ] 03: RTL - Testando React Router
- - [ ] 04: Projeto - Testes em React
+ - [x] 01: RTL - Primeiros passos
+ - [x] 02: RTL - Mocks e Inputs
+ - [x] 03: RTL - Testando React Router
+ - [x] 04: [Projeto - Testes em React](https://github.com/tryber/sd-011-project-react-testing-library/pull/18)
 
 Bloco 16: Gerenciamento de estado com Redux
 
- - [ ] 01: Introdução ao Redux - O estado global da aplicação
- - [ ] 02: Usando o Redux no React
- - [ ] 03: Usando o Redux no React - Prática
- - [ ] 04: Usando o Redux no React - Actions Assíncronas
- - [ ] 05: Testes em React-Redux
- - [ ] 06: Projeto - Trybe Wallet
+ - [x] 01: Introdução ao Redux - O estado global da aplicação
+ - [x] 02: Usando o Redux no React
+ - [x] 03: Usando o Redux no React - Prática
+ - [x] 04: Usando o Redux no React - Actions Assíncronas
+ - [x] 05: Testes em React-Redux
+ - [x] 06: [Projeto - Trybe Wallet](https://github.com/tryber/sd-011-project-trybewallet/pull/9)
 
 Bloco 17: Projeto Jogo de Trivia
  - [ ] 01: Projeto - Jogo de Trivia
