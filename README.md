@@ -129,11 +129,11 @@ Bloco 16: Gerenciamento de estado com Redux
  - [x] 06: [Projeto - Trybe Wallet](https://github.com/tryber/sd-011-project-trybewallet/pull/9)
 
 Bloco 17: Projeto Jogo de Trivia
- - [ ] 01: Projeto - Jogo de Trivia
+ - [x] 01: [Projeto - Jogo de Trivia](https://github.com/tryber/sd-011-project-trivia-react-redux/pull/541)
 
 Bloco 18: Context API e React Hooks
 
- - [ ] 01: Context API do React
+ - [x] 01: Context API do React
  - [ ] 02: React Hooks - useState e useContext
  - [ ] 03: React Hooks - useEffect e Hooks customizados
  - [ ] 04: Projeto - StarWars Datatable com Context API e Hooks
