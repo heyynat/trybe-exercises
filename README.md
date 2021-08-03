@@ -134,10 +134,10 @@ Bloco 17: Projeto Jogo de Trivia
 Bloco 18: Context API e React Hooks
 
  - [x] 01: Context API do React
- - [ ] 02: React Hooks - useState e useContext
- - [ ] 03: React Hooks - useEffect e Hooks customizados
- - [ ] 04: Projeto - StarWars Datatable com Context API e Hooks
+ - [x] 02: React Hooks - useState e useContext
+ - [x] 03: React Hooks - useEffect e Hooks customizados
+ - [x] 04: [Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-011-project-starwars-planets-search/pull/10)
 
 Bloco 19: Projeto App de Receitas
 
- - [ ] 01: Projeto - App de Receitas
+ - [x] 01: [Projeto - App de Receitas](https://github.com/tryber/sd-011-project-recipes-app/pull/30)
