@@ -141,3 +141,101 @@ Bloco 18: Context API e React Hooks
 Bloco 19: Projeto App de Receitas
 
  - [x] 01: [Projeto - App de Receitas](https://github.com/tryber/sd-011-project-recipes-app/pull/30)
+
+
+<h1>Desenvolvimento Back-end</h1>
+
+Bloco 20: Introdução à SQL
+ - [ ] 01: Introdução - Back-end
+ - [ ] 01: Introdução - Bancos de dados relacionais
+ - [ ] 01: Banco de dados SQL
+ - [ ] 02: Encontrando dados em um banco de dados
+ - [ ] 03: Filtrando dados de forma específica
+ - [ ] 04: Manipulando tabelas
+ - [ ] 05: Projeto - All For One
+
+Bloco 21: Funções SQL, Joins e Subqueries
+
+ - [ ] 01: Funções mais usadas no SQL
+ - [ ] 02: Descomplicando JOINs, UNIONs e Subqueries
+ - [ ] 03: Stored Routines & Stored Functions
+ - [ ] 04: Projeto - Vocabulary Booster
+
+Bloco 22: Normalização e Modelagem de Banco de Dados
+
+ - [ ] 01: Transformando ideias em um modelo de banco de dados - Parte 1
+ - [ ] 02: Normalização, Formas Normais e Dumps
+ - [ ] 03: Transformando ideias em um modelo de banco de dados - Parte 2
+ - [ ] 04: Projeto - One For All
+
+Bloco 23: Introdução ao MongoDB
+
+ - [ ] 01: Introdução - NoSQL
+ - [ ] 01: MongoDB - Introdução
+ - [ ] 02: Filter Operators
+ - [ ] 03: Projeto - Data Flights
+
+Bloco 24: MongoDB: Updates Simples e Complexos
+
+ - [ ] 01: Updates Simples
+ - [ ] 02: Updates Complexos - Arrays - Parte 1
+ - [ ] 03: Updates Complexos - Arrays - Parte 2
+ - [ ] 04: Projeto - Commerce
+
+Bloco 25: MongoDB: Aggregation Framework
+
+ - [ ] 01: Aggregation Framework - Parte 1
+ - [ ] 02: Aggregation Framework - Parte 2
+ - [ ] 03: Projeto - Aggregations
+
+Bloco 26: Introdução ao desenvolvimento Web com NodeJS
+
+ - [ ] 01: Intro - NodeJS
+ - [ ] 01: Node.js - Introdução
+ - [ ] 02: Node.js - Fluxo Assíncrono
+ - [ ] 03: Testes com NodeJS
+ - [ ] 04: Express: HTTP com Node.js
+ - [ ] 05: Praticando Express
+ - [ ] 06: Projeto - Talker Manager
+
+Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
+
+ - [ ] 01: Introdução - Arquitetura de Software
+ - [ ] 01: Arquitetura de Software - Camada de Model
+ - [ ] 02: Arquitetura de Software - Camada de Controller e Service
+ - [ ] 03: Arquitetura Web - Rest e Restful
+ - [ ] 04: Arquitetura de Software - Testando as Camadas
+ - [ ] 05: Projeto - Store Manager
+
+Bloco 28: Autenticação e Upload de Arquivos
+
+ - [ ] 01: NodeJS - JWT - (JSON Web Token)
+ - [ ] 02: NodeJS - Upload de arquivos com `multer`
+ - [ ] 03: NodeJS - Testando APIs com Testes de Integração
+ - [ ] 04: Projeto - Cookmaster
+
+Bloco 29: Deployment
+
+ - [ ] 01: Introdução - Deploy
+ - [ ] 01: Infraestrutura - Deploy com Heroku
+ - [ ] 02: Deploy - Gerenciadores de Processos
+ - [ ] 03: Projeto - Stranger Things
+
+Bloco 30: Arquitetura: SOLID e ORM
+
+ - [ ] 01: Arquitetura - Princípios SOLID
+ - [ ] 02: ORM - Interface da aplicação com o banco de dados
+ - [ ] 03: ORM - Associations
+ - [ ] 04: Projeto - API de Blogs
+
+Bloco 31: Sockets
+
+ - [ ] 01: Arquitetura de Software - Camada de View
+ - [ ] 02: Sockets - TCP/UDP & NET
+ - [ ] 03: Sockets - Socket.io
+ - [ ] 04: Sockets - Praticando Socket.io
+ - [ ] 05: Projeto - Webchat
+
+Bloco 32:
+
+ - [ ] 01: Projeto - App de Delivery
