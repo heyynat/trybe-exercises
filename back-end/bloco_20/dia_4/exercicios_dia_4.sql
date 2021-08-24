@@ -67,14 +67,8 @@ UPDATE Movies
 SET rating = 9.9, domestic_sales = 290000000, international_sales = 280000000
 WHERE title = 'WALL-E';
 
-DELETE FROM BoxOffice
-WHERE movie_id = 11; 
 DELETE FROM Movies
 WHERE title = 'WALL-E';
 
-SELECT id FROM Movies
-WHERE director = 'Andrew Staton';
-DELETE FROM BoxOffice
-WHERE movie_id IN (2, 9);
 DELETE FROM Movies
 WHERE director = 'Andrew Staton';
