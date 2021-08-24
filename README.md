@@ -146,13 +146,13 @@ Bloco 19: Projeto App de Receitas
 <h1>Desenvolvimento Back-end</h1>
 
 Bloco 20: Introdução à SQL
- - [ ] 01: Introdução - Back-end
- - [ ] 01: Introdução - Bancos de dados relacionais
- - [ ] 01: Banco de dados SQL
- - [ ] 02: Encontrando dados em um banco de dados
- - [ ] 03: Filtrando dados de forma específica
- - [ ] 04: Manipulando tabelas
- - [ ] 05: Projeto - All For One
+ - [x] 01: Introdução - Back-end
+ - [x] 01: Introdução - Bancos de dados relacionais
+ - [x] 01: Banco de dados SQL
+ - [x] 02: Encontrando dados em um banco de dados
+ - [x] 03: Filtrando dados de forma específica
+ - [x] 04: Manipulando tabelas
+ - [x] 05: [Projeto - All For One](https://github.com/tryber/sd-011-project-mysql-all-for-one/pull/51)
 
 Bloco 21: Funções SQL, Joins e Subqueries
 
