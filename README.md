@@ -156,14 +156,14 @@ Bloco 20: Introdução à SQL
 
 Bloco 21: Funções SQL, Joins e Subqueries
 
- - [ ] 01: Funções mais usadas no SQL
- - [ ] 02: Descomplicando JOINs, UNIONs e Subqueries
- - [ ] 03: Stored Routines & Stored Functions
- - [ ] 04: Projeto - Vocabulary Booster
+ - [x] 01: Funções mais usadas no SQL
+ - [x] 02: Descomplicando JOINs, UNIONs e Subqueries
+ - [x] 03: Stored Routines & Stored Functions
+ - [x] 04: [Projeto - Vocabulary Booster](https://github.com/tryber/sd-011-mysql-vocabulary-booster/pull/7)
 
 Bloco 22: Normalização e Modelagem de Banco de Dados
 
- - [ ] 01: Transformando ideias em um modelo de banco de dados - Parte 1
+ - [x] 01: Transformando ideias em um modelo de banco de dados - Parte 1
  - [ ] 02: Normalização, Formas Normais e Dumps
  - [ ] 03: Transformando ideias em um modelo de banco de dados - Parte 2
  - [ ] 04: Projeto - One For All
