@@ -164,15 +164,15 @@ Bloco 21: Funções SQL, Joins e Subqueries
 Bloco 22: Normalização e Modelagem de Banco de Dados
 
  - [x] 01: Transformando ideias em um modelo de banco de dados - Parte 1
- - [ ] 02: Normalização, Formas Normais e Dumps
- - [ ] 03: Transformando ideias em um modelo de banco de dados - Parte 2
- - [ ] 04: Projeto - One For All
+ - [x] 02: Normalização, Formas Normais e Dumps
+ - [x] 03: Transformando ideias em um modelo de banco de dados - Parte 2
+ - [x] 04: [Projeto - One For All](https://github.com/tryber/sd-011-mysql-one-for-all/pull/20)
 
 Bloco 23: Introdução ao MongoDB
 
- - [ ] 01: Introdução - NoSQL
- - [ ] 01: MongoDB - Introdução
- - [ ] 02: Filter Operators
+ - [x] 01: Introdução - NoSQL
+ - [x] 01: MongoDB - Introdução
+ - [x] 02: Filter Operators
  - [ ] 03: Projeto - Data Flights
 
 Bloco 24: MongoDB: Updates Simples e Complexos
