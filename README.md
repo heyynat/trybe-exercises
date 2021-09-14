@@ -173,12 +173,12 @@ Bloco 23: Introdução ao MongoDB
  - [x] 01: Introdução - NoSQL
  - [x] 01: MongoDB - Introdução
  - [x] 02: Filter Operators
- - [ ] 03: Projeto - Data Flights
+ - [x] 03: [Projeto - Data Flights](https://github.com/tryber/sd-011-mongodb-dataflights/pull/80)
 
 Bloco 24: MongoDB: Updates Simples e Complexos
 
- - [ ] 01: Updates Simples
- - [ ] 02: Updates Complexos - Arrays - Parte 1
+ - [x] 01: Updates Simples
+ - [x] 02: Updates Complexos - Arrays - Parte 1
  - [ ] 03: Updates Complexos - Arrays - Parte 2
  - [ ] 04: Projeto - Commerce
 
