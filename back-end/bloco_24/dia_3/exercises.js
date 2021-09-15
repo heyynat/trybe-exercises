@@ -2,3 +2,21 @@
 db.movies.find({ category: { $all: ["action", "adventure"] } }).pretty();
 
 // Agora retorne os filmes que contenham action no array category e possuem nota do IMDB maior do que 7 .
+db.movies.find(
+    { $and: [
+        { category: { $all: ["adventure"] } },
+        {"imdbRating": { $gt: 7 } }
+    ]}
+).pretty();
+
+// Adicione um array chamado ratings ao filme Batman com os seguintes valores: [85, 100, 102, 105] . Dica: lembre-se do operador $each visto no dia anterior.
+db.movies.updateMany(
+    { title: { $all: ["Batman"] } },
+    { $push: { ratings: { $each: [85, 100, 102, 105]  } } }
+);
+
+// Adicione um array chamado ratings ao filme Godzilla com os seguintes valores: [78, 52, 95, 102] .
+db.movies.updateMany(
+    { title: { $all: ["Godzilla"] } },
+    { $push: { ratings: { $each: [78, 52, 95, 102]  } } }
+);
