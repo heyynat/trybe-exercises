@@ -26,3 +26,15 @@ db.movies.updateMany(
     { title: { $all: ["Home Alone"] } },
     { $push: { ratings: { $each: [200, 99, 65]  } } }
 );
+
+// Retorne todos os filmes com ratings maior do que 103 , exibindo apenas os campos title e ratings .
+db.movies.find(
+    { ratings: { $elemMatch: { $gte: 100, $lt: 105 } } },
+    { title: 1, ratings: 1, _id: 0 }
+).pretty();
+
+// Retorne todos os filmes com ratings entre 100 e 105 , exibindo apenas os campos title e ratings .
+db.movies.find(
+    { ratings: { $elemMatch: { $gte: 100, $lt: 105 } } },
+    { title: 1, ratings: 1, _id: 0 }
+).pretty();
