@@ -1,6 +1,6 @@
 <h1>TRYBE</h1>
 
-Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Natali Lima](https://www.linkedin.com/in/natali-lima/) enquanto estudava na Trybe
+Este repositório contém todas as atividades de aprendizagem desenvolvidas por [Natali Lima](https://www.linkedin.com/in/heyynat/) enquanto estudava na Trybe
 
 "A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."
 
@@ -179,12 +179,12 @@ Bloco 24: MongoDB: Updates Simples e Complexos
 
  - [x] 01: Updates Simples
  - [x] 02: Updates Complexos - Arrays - Parte 1
- - [ ] 03: Updates Complexos - Arrays - Parte 2
- - [ ] 04: Projeto - Commerce
+ - [x] 03: Updates Complexos - Arrays - Parte 2
+ - [x] 04: [Projeto - Commerce](https://github.com/tryber/sd-011-mongodb-commerce/pull/58)
 
 Bloco 25: MongoDB: Aggregation Framework
 
- - [ ] 01: Aggregation Framework - Parte 1
+ - [x] 01: Aggregation Framework - Parte 1
  - [ ] 02: Aggregation Framework - Parte 2
  - [ ] 03: Projeto - Aggregations
 
