@@ -1,7 +1,7 @@
 {
   "name": "dia_3",
   "version": "1.0.0",
-  "main": "exerciseOne.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "mocha tests"
