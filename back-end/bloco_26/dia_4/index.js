@@ -22,6 +22,11 @@ app.post('/greetings', (req, res) => {
   res.status(200).json({ "name": `${nome}`, "age": `${idade}` });
 });
 
+app.put('/usuario/:nome/:idade', function (req, res) {
+  const { nome, idade } = req.body;
+  res.status(200).json({ "message": `Seu nome é ${nome} e você tem ${idade} anos de idade` })
+});
+
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
 });
