@@ -1,6 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const rescue = require('express-rescue');
+
+const simpsonsUtils = require('./fs-utils');
+
 const app = express();
 
 app.get('/ping', function (req, res) {
@@ -26,6 +30,11 @@ app.put('/usuario/:nome/:idade', function (req, res) {
   const { nome, idade } = req.body;
   res.status(200).json({ "message": `Seu nome é ${nome} e você tem ${idade} anos de idade` })
 });
+
+app.get('/simpsons', rescue(async (req, res) => {
+  const simpsons = await simpsonsUtils.getSimpsons();
+  res.status(200).json(simpsons);
+}))
 
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
