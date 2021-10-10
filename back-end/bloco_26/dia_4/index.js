@@ -51,6 +51,24 @@ app.get(
   })
 );
 
+app.post(
+  '/simpsons',
+  rescue(async (req, res) => {
+    const { id, name } = req.body;
+    const simpsons = await simpsonsUtils.getSimpsons();
+
+    const simpsonRepeat = simpsons.find(({id}) => id === req.body.id);
+
+    if (!simpsonRepeat) {
+      return res.status(409).json({ message: 'id already exists' });
+    }    
+    const newArray = [id, name];
+    
+    await fs.writeFile('./simpsons.json', JSON.stringify(newArray));
+    return res.status(204).end();
+  })
+);
+
 app.listen(3001, () => {
   console.log('Aplicação ouvindo na porta 3001');
 });
