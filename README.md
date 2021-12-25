@@ -196,29 +196,29 @@ Bloco 26: Introdução ao desenvolvimento Web com NodeJS
  - [x] 03: Testes com NodeJS
  - [x] 04: Express: HTTP com Node.js
  - [x] 05: Praticando Express
- - [ ] 06: Projeto - Talker Manager
+ - [ ] 06: [Projeto - Talker Manager](https://github.com/tryber/sd-011-project-talker-manager/pull/138)
 
 Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful
 
  - [x] 01: Introdução - Arquitetura de Software
  - [x] 01: Arquitetura de Software - Camada de Model
  - [x] 02: Arquitetura de Software - Camada de Controller e Service
- - [ ] 03: Arquitetura Web - Rest e Restful
- - [ ] 04: Arquitetura de Software - Testando as Camadas
- - [ ] 05: Projeto - Store Manager
+ - [x] 03: Arquitetura Web - Rest e Restful
+ - [x] 04: Arquitetura de Software - Testando as Camadas
+ - [x] 05: [Projeto - Store Manager](https://github.com/tryber/sd-012-store-manager/pull/137)
 
 Bloco 28: Autenticação e Upload de Arquivos
 
- - [ ] 01: NodeJS - JWT - (JSON Web Token)
- - [ ] 02: NodeJS - Upload de arquivos com `multer`
- - [ ] 03: NodeJS - Testando APIs com Testes de Integração
- - [ ] 04: Projeto - Cookmaster
+ - [x] 01: NodeJS - JWT - (JSON Web Token)
+ - [x] 02: NodeJS - Upload de arquivos com `multer`
+ - [x] 03: NodeJS - Testando APIs com Testes de Integração
+ - [x] 04: [Projeto - Cookmaster](https://github.com/tryber/sd-012-cookmaster/pull/142)
 
 Bloco 29: Deployment
 
- - [ ] 01: Introdução - Deploy
- - [ ] 01: Infraestrutura - Deploy com Heroku
- - [ ] 02: Deploy - Gerenciadores de Processos
+ - [x] 01: Introdução - Deploy
+ - [x] 01: Infraestrutura - Deploy com Heroku
+ - [x] 02: Deploy - Gerenciadores de Processos
  - [ ] 03: Projeto - Stranger Things
 
 Bloco 30: Arquitetura: SOLID e ORM
